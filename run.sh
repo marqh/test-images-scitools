@@ -8,6 +8,7 @@ import unittest
 
 class TestHash(unittest.TestCase):
     def test(self):
+        self.maxDiff = None
         exceptions = []
         for ifile in glob.glob("image_files/*"):
             with open(ifile, 'rb') as ifileh:
